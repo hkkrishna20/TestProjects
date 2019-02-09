@@ -1,0 +1,112 @@
+
+{
+    "chart": {
+        "type": "pie"
+    },
+    "title": {
+        "text": "Browser market shares. January, 2018"
+    },
+    "subtitle": {
+        "text": "Click the slices to view versions. Source: <a href=\"http://statcounter.com\" target=\"_blank\">statcounter.com</a>"
+    },
+    "plotOptions": {
+        "series": {
+            "dataLabels": {
+                "enabled": true,
+                "format": "{point.name}: {point.y:.1f}%"
+            }
+        }
+    },
+
+    "tooltip": {
+         "headerFormat":"<span style=\"font-size:11px\">{series.name}</span><br>",
+        "pointFormat": "<span style=\"color:{point.color}\">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>"
+    }
+,
+"series": [{
+                "id": "directors",
+                "name": "directors",
+                "data": [{
+                    "name": "Rajesh",
+                    "y": 2,
+                    "drilldown": "rajesh"
+                }, 
+                {
+                    "name": "Srini",
+                    "y": 2,
+                    "drilldown": "srini"
+                }
+            ]
+			},
+            {
+                "id": "srini",
+                "data": [{
+                    "name": "Manager1",
+                    "y": 3,
+                    "drilldown": "projects1"
+                }, 
+                {
+                    "name": "Manager2",
+                    "y": 2,
+                    "drilldown": "projects2"
+                }]
+            },
+            {
+                "id": "rajesh",
+                "data": [{
+							"name": "Manager3",
+                    		"y": 3,
+                    		"drilldown": "projects3"
+                }, 
+                {
+                   "name": "Manager4",
+                    "y": 2,
+                    "drilldown": "projects4"
+                }]
+            },
+            {
+                "id": "projects1",
+                "data": [{
+                    "name": "ProjectA",
+                    "y"  :5
+                }, 
+                {
+                    "name": "ProjectB",
+                    "y"  :14
+                }]
+            },
+            {
+                "id": "projects2",
+                "data": [{
+                    "name": "ProjectC",
+                    "y"  :10
+                }, 
+                {
+                    "name": "ProjectD",
+                    "y"  :2
+                }]
+            },
+            {
+                "id": "projects3",
+                "data": [{
+                    "name": "ProjectE",
+                    "y"  :8
+                }, 
+                {
+                    "name": "ProjectF",
+                    "y"  :12
+                }]
+            },
+            {
+                "id": "projects4",
+                "data": [{
+                    "name": "ProjectG",
+                    "y"  :2
+                }, 
+                {
+                    "name": "ProjectH",
+                    "y"  :13
+                }]
+            }
+       ]
+	  }

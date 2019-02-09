@@ -1,0 +1,26 @@
+CAZy Based ranking of Fungal Lignocellulolytic abilities:
+
+##Metadata
+# File-1: Ranking Fungi_CAZymes
+Genome_code: Represents the short name of the microorganism
+Name: Complete scientific name of the organism
+Published: Reference of the genome
+Assembly Length	Genes: Total length of the published genome
+Genes: Total number of genes
+
+File-2: CAZymes 
+Annotations/Genomes:
+Genome code: (First three letters in the generic name and two letters in the species name)
+Annotations: AA class enzymes, GH-class enzymes, GT-class enzymes, CE-class enzymes, CBM-class enzymes, PL-class enzymes, DOC-class enzymes with total number of genes encoding for the enzymes
+
+Queries:
+a) Calculate total number of individual class enzymes (For ex: AA-class enzymes) among the microorganisms genomes using the Genome code
+   For Ex: Sclsc1 (Genome code); total number of AA encoding genes 58 and rank the fungal genomes based on the total number of individual class enzyme number
+ 
+b) Arrange the microorganisms in descending order based on the total number of genes encoding in each enzyme class 
+
+  
+
+
+
+

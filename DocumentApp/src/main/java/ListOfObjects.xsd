@@ -1,0 +1,24 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="listofResponseObject" type="listofResponseObjectType"/>
+  <xs:complexType name="paraTypeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="content"/>
+      <xs:element type="xs:int" name="contentId"/>
+      <xs:element type="xs:int" name="paraSeq"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="responsesType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="fileId"/>
+      <xs:element type="xs:string" name="formId"/>
+      <xs:element type="xs:string" name="formTitle"/>
+      <xs:element type="paraTypeType" name="paraType" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:float" name="versionNo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listofResponseObjectType">
+    <xs:sequence>
+      <xs:element type="responsesType" name="responses" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

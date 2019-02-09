@@ -1,0 +1,45 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Hrbu" type="HrbuType"/>
+  <xs:complexType name="BuLeadType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GroupLeadType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProjectType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="Candidate" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ReportingManagerType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="ProjectType" name="Project" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DirectorType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="ReportingManagerType" name="ReportingManager" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pyramidAccountType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="BuLeadType" name="BuLead"/>
+      <xs:element type="GroupLeadType" name="GroupLead"/>
+      <xs:element type="DirectorType" name="Director" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HrbuType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="pyramidAccountType" name="pyramidAccount" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

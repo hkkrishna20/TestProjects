@@ -1,0 +1,37 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="candidate" type="candidateType"/>
+  <xs:complexType name="candidateType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="resourceID"/>
+      <xs:element type="xs:string" name="resourceName"/>
+      <xs:element type="xs:string" name="resourceEmailID"/>
+      <xs:element type="xs:string" name="dOJ"/>
+      <xs:element type="xs:string" name="designation"/>
+      <xs:element type="xs:string" name="gender"/>
+      <xs:element type="xs:string" name="shortDesignation"/>
+      <xs:element type="xs:string" name="cgiExp"/>
+      <xs:element type="xs:string" name="prevExp"/>
+      <xs:element type="xs:string" name="totalExp"/>
+      <xs:element type="xs:string" name="memberType"/>
+      <xs:element type="xs:string" name="location"/>
+      <xs:element type="xs:string" name="subLocation"/>
+      <xs:element type="xs:string" name="skillsFamily"/>
+      <xs:element type="xs:string" name="competency"/>
+      <xs:element type="xs:string" name="subCompetency"/>
+      <xs:element type="xs:string" name="skillCategory"/>
+      <xs:element type="xs:string" name="departmentID"/>
+      <xs:element type="xs:string" name="departmentDescription"/>
+      <xs:element type="xs:string" name="assignmentStartDate"/>
+      <xs:element type="xs:string" name="assignmentEndDate"/>
+      <xs:element type="xs:string" name="employeeStatus"/>
+      <xs:element type="xs:string" name="releaseMonth"/>
+      <xs:element type="xs:string" name="reportingManager"/>
+      <xs:element type="xs:string" name="reportingManagerEmailID"/>
+      <xs:element type="xs:string" name="projectManagerDept11InTheHRTree"/>
+      <xs:element type="xs:string" name="directorDept10InTheHRTree"/>
+      <xs:element type="xs:string" name="groupLeadDept9InTheHRTree"/>
+      <xs:element type="xs:string" name="buLeadDept8InTheHRTree"/>
+      <xs:element type="xs:string" name="pyramidAccountHRBU"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
